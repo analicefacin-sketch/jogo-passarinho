@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Extremo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <canvas id="game"></canvas>
+
+    <div id="hud">
+        <div class="panel">
+            <span>PONTOS</span>
+            <strong id="score">0</strong>
+        </div>
+
+        <div class="panel center">
+            <span>NÍVEL DE CAOS</span>
+            <strong id="level">1</strong>
+            <small id="speed">VELOCIDADE 1.0x</small>
+        </div>
+
+        <div class="panel right">
+            <span>RECORDE</span>
+            <strong id="best">0</strong>
+        </div>
+    </div>
+
+    <div id="overlay">
+        <div class="card" id="menu">
+            <h1>FLAPPY EXTREMO</h1>
+            <p>Você consegue sobreviver?</p>
+            <p>Canos móveis • Velocidade crescente • Cores neon</p>
+            <p>Controles: ESPAÇO, clique ou toque.</p>
+            <button id="startBtn">INICIAR O CAOS</button>
+        </div>
+
+        <div class="card hidden" id="gameOver">
+            <h1 class="danger">FIM DE JOGO</h1>
+            <p id="finalScore">Pontuação: 0</p>
+            <p id="finalBest">Recorde: 0</p>
+            <button id="restartBtn">JOGAR NOVAMENTE</button>
+        </div>
+    </div>
+
+    <div id="hint">ESPAÇO / CLIQUE / TOQUE PARA VOAR</div>
+
+</body>
+</html>
